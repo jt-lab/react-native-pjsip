@@ -25,7 +25,6 @@ public class AccountConfigurationDTO {
 
     public String regServer;
 
-    @Nullable
     public Integer regTimeout;
 
     public Map<String, String> regHeaders;
@@ -86,7 +85,6 @@ public class AccountConfigurationDTO {
         return regServer != null && regServer.length() > 0 ? regServer : "*";
     }
 
-    @Nullable
     public Integer getRegTimeout() {
         return regTimeout;
     }
